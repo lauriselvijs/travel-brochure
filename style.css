@@ -6,12 +6,18 @@ body::before {
 
 #showcase {
   background-image: url("./img/travel-showcase.jpg");
-  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 100vh;
 }
 
 #message {
   background-image: url("./img/message.jpg");
-  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 40vh;
 }
 
 #rome {
@@ -31,14 +37,20 @@ body::before {
 
 #mountains {
   background-image: url("./img/mountains.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #snow-resort {
   background-image: url("./img/snow-resort.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #travel-guides {
   background-image: url("./img/travel-guides.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #map {
