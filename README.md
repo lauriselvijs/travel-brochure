@@ -2,7 +2,7 @@
 
 ## Setup
 
-### Instal Node.js (version 168)
+### Instal Node.js (version 18)
 
 https://nodejs.org/en/blog/release/v18.0.0/
 
