@@ -1,56 +1,56 @@
 :root {
   scroll-behavior: smooth;
-
-  scrollbar-color: rebeccapurple green;
-}
-
-nav {
-  backdrop-filter: blur(8px);
 }
 
 #showcase {
-  background-image: url("./assets/images/travel-showcase.jpg");
+  background-image: url("../images/travel-showcase.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
 }
 
 #message {
-  background-image: url("./assets/images/map.jpg");
+  background-image: url("../images/map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 40vh;
 }
 
 #rome {
-  background-image: url("./assets/images/rome.jpg");
+  background-image: url("../images/rome.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 341px;
 }
 
 #paris {
-  background-image: url("./assets/images/paris.jpg");
+  background-image: url("../images/paris.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 341px;
 }
 
 #venice {
-  background-image: url("./assets/images/venice.jpg");
+  background-image: url("../images/venice.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 341px;
 }
 
 #mountains {
-  background-image: url("./assets/images/mountains.jpg");
+  background-image: url("../images/mountains.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #snow-resort {
-  background-image: url("./assets/images/snow-resort.jpg");
+  background-image: url("../images/snow-resort.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #travel-guides {
-  background-image: url("./assets/images/map.jpg");
+  background-image: url("../images/map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -65,6 +65,12 @@ nav {
   font-size: 22px;
 }
 
+/* Bootstrap */
+
+nav {
+  backdrop-filter: blur(8px);
+}
+
 .navbar-nav .nav-item .nav-link {
   color: white;
 }
@@ -75,6 +81,14 @@ nav {
 
 .modal-content {
   backdrop-filter: blur(32px);
+}
+
+.card {
+  backdrop-filter: blur(32px);
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 /* Chrome */

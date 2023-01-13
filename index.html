@@ -11,7 +11,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico?v=2">
   <title>Travel Europa</title>
 </head>
@@ -271,7 +271,7 @@
       </p>
       <div class="row g-4">
         <div class="col-md-6 col-lg-3">
-          <div class="card bg-light">
+          <div class="card bg-light bg-opacity-50">
             <div class="card-body text-center">
               <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt="" />
               <h3 class="card-title mb-3">John Doe</h3>
@@ -288,7 +288,7 @@
         </div>
 
         <div class="col-md-6 col-lg-3">
-          <div class="card bg-light">
+          <div class="card bg-light bg-opacity-50">
             <div class="card-body text-center">
               <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3" alt="" />
               <h3 class="card-title mb-3">Jane Doe</h3>
@@ -305,7 +305,7 @@
         </div>
 
         <div class="col-md-6 col-lg-3">
-          <div class="card bg-light">
+          <div class="card bg-light bg-opacity-50">
             <div class="card-body text-center">
               <img src="https://randomuser.me/api/portraits/men/12.jpg" class="rounded-circle mb-3" alt="" />
               <h3 class="card-title mb-3">Steve Smith</h3>
@@ -322,7 +322,7 @@
         </div>
 
         <div class="col-md-6 col-lg-3">
-          <div class="card bg-light">
+          <div class="card bg-light bg-opacity-50">
             <div class="card-body text-center">
               <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3" alt="" />
               <h3 class="card-title mb-3">Sara Smith</h3>
@@ -374,8 +374,8 @@
       <p class="lead">&copy; <span id="copyright-year"></span>
         Travel Europa</p>
 
-      <a href="#" aria-label="To the top" class="position-fixed bottom-0 end-0 p-5">
-        <i class="bi bi-arrow-up-circle h1"></i>
+      <a href="#" id="to-the-top-anchor" aria-label="To the top" class="position-fixed bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h1 text-blue"></i>
       </a>
     </div>
   </footer>
@@ -383,7 +383,7 @@
   <!-- Modal -->
   <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content bg-white bg-opacity-50">
+      <div class="modal-content bg-light bg-opacity-50">
         <div class="modal-header">
           <h5 class="modal-title" id="enrollLabel">Contant Us</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -437,6 +437,25 @@
     });
 
     document.getElementById("copyright-year").textContent = new Date().getFullYear();
+
+    const HIDE_TO_THE_TOP_ANCHOR_TIMEOUT = 500;
+    const toTheTopAnchor = document.getElementById("to-the-top-anchor");
+    let timer = null;
+
+    function onDocumentScroll() {
+      if (timer !== null) {
+        clearTimeout(timer);
+
+        toTheTopAnchor.style.display = "block";
+      }
+
+      timer = setTimeout(function () {
+        toTheTopAnchor.style.display = "none";
+      }, HIDE_TO_THE_TOP_ANCHOR_TIMEOUT);
+
+    }
+
+    document.addEventListener("scroll", onDocumentScroll);
   </script>
 </body>
 
