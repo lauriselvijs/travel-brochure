@@ -1,54 +1,56 @@
-body::before {
-  display: block;
-  content: "";
-  height: 60px;
+:root {
+  scroll-behavior: smooth;
+
+  scrollbar-color: rebeccapurple green;
+}
+
+nav {
+  backdrop-filter: blur(8px);
 }
 
 #showcase {
-  background-image: url("./img/travel-showcase.jpg");
+  background-image: url("./assets/images/travel-showcase.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
   min-height: 100vh;
 }
 
 #message {
-  background-image: url("./img/message.jpg");
+  background-image: url("./assets/images/map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
   min-height: 40vh;
 }
 
 #rome {
-  background-image: url("./img/rome.jpg");
-  height: 341px;
+  background-image: url("./assets/images/rome.jpg");
+  min-height: 341px;
 }
 
 #paris {
-  background-image: url("./img/paris.jpg");
-  height: 341px;
+  background-image: url("./assets/images/paris.jpg");
+  min-height: 341px;
 }
 
 #venice {
-  background-image: url("./img/venice.jpg");
-  height: 341px;
+  background-image: url("./assets/images/venice.jpg");
+  min-height: 341px;
 }
 
 #mountains {
-  background-image: url("./img/mountains.jpg");
+  background-image: url("./assets/images/mountains.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #snow-resort {
-  background-image: url("./img/snow-resort.jpg");
+  background-image: url("./assets/images/snow-resort.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #travel-guides {
-  background-image: url("./img/travel-guides.jpg");
+  background-image: url("./assets/images/map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -61,6 +63,28 @@ body::before {
 
 .card-text {
   font-size: 22px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: lightblue;
+}
+
+.modal-content {
+  backdrop-filter: blur(32px);
+}
+
+/* Chrome */
+::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  background-color: lightgray;
+  width: 8px;
 }
 
 @media (min-width: 768px) {
