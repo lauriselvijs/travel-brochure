@@ -1,0 +1,14 @@
+# dependencies
+/node_modules
+
+# production
+/build
+
+# docker
+.dockerignore
+Dockerfile.dev
+docker-compose.dev.yml
+
+# misc
+.env
+

@@ -1,0 +1,108 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+#showcase {
+  background-image: url("../../assets/images/travel-showcase.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#message {
+  background-image: url("../../assets/images/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 40vh;
+}
+
+#rome {
+  background-image: url("../../assets/images/rome.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 341px;
+}
+
+#paris {
+  background-image: url("../../assets/images/paris.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 341px;
+}
+
+#venice {
+  background-image: url("../../assets/images/venice.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 341px;
+}
+
+#mountains {
+  background-image: url("../../assets/images/mountains.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#snow-resort {
+  background-image: url("../../assets/images/snow-resort.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#travel-guides {
+  background-image: url("../../assets/images/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.card-text {
+  font-size: 22px;
+}
+
+/* Bootstrap */
+
+nav {
+  backdrop-filter: blur(8px);
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: lightblue;
+}
+
+.modal-content {
+  backdrop-filter: blur(32px);
+}
+
+.card {
+  backdrop-filter: blur(32px);
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* Chrome */
+::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  background-color: lightgray;
+  width: 8px;
+}
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
