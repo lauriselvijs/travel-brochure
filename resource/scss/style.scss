@@ -2,11 +2,19 @@
   scroll-behavior: smooth;
 }
 
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.card-text {
+  font-size: 1.375rem;
+}
+
 #showcase {
   background-image: url("../../assets/images/travel-showcase.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 
 #message {
@@ -20,21 +28,21 @@
   background-image: url("../../assets/images/rome.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 341px;
+  max-height: 341px;
 }
 
 #paris {
   background-image: url("../../assets/images/paris.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 341px;
+  max-height: 341px;
 }
 
 #venice {
   background-image: url("../../assets/images/venice.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 341px;
+  max-height: 341px;
 }
 
 #mountains {
@@ -55,16 +63,6 @@
   background-size: cover;
 }
 
-#map {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-.card-text {
-  font-size: 22px;
-}
-
 /* Bootstrap */
 
 nav {
@@ -73,10 +71,6 @@ nav {
 
 .navbar-nav .nav-item .nav-link {
   color: white;
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-  color: lightblue;
 }
 
 .modal-content {
