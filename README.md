@@ -1,4 +1,4 @@
-# Task_2_Lauris_Macans
+# Travel brochure
 
 ## Setup
 
