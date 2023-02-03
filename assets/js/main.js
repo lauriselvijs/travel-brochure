@@ -1,14 +1,18 @@
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "mapbox-gl/dist/mapbox-gl.css";
+import mapboxgl from "mapbox-gl";
+
 import "../../resource/scss/style.scss";
 import "../../index.html";
 
 // Map
 
 const OFFICE_LOCATION = [-73.96, 40.78];
-
 const MAP_ZOOM_LEVEL = 16;
 const MAP_STYLE = "mapbox://styles/mapbox/streets-v11";
 const MAP_CONTAINER = "map";
-
 const MARKER_COLOR = "black";
 
 mapboxgl.accessToken = process.env.MAPBOX_KEY || 0;
@@ -20,7 +24,7 @@ const map = new mapboxgl.Map({
   zoom: MAP_ZOOM_LEVEL,
 });
 
-const marker = new mapboxgl.Marker({
+new mapboxgl.Marker({
   color: MARKER_COLOR,
 })
   .setLngLat(OFFICE_LOCATION)

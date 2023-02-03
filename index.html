@@ -8,20 +8,16 @@
   <meta name="keywords" content="Travel, World, Brochure">
   <meta name="description" content="Travel brochure" />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-  <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
-  <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico?v=2">
+  <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
 
   <title>Roaming Adventures</title>
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-dark bg-opacity-50 navbar-dark py-3 fixed-top">
+  <nav class="navbar navbar-expand-lg bg-dark bg-opacity-50 navbar-dark py-3 fixed-top overflow-auto">
     <div class="container">
-      <a href="#" class="navbar-brand">Roaming Adventures</a>
+      <a href="#" class="navbar-brand  w-50 text-wrap">Roaming Adventures</a>
 
       <button aria-label="Toggle hamburger menu" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
         data-bs-target="#navmenu">
@@ -250,10 +246,10 @@
               <p class="card-text">
                 Has a deep understanding and knowledge of the destinations they are guiding and can provide insightful
                 information and context to travelers. </p>
-              <a aria-label="Twitter" href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-              <a aria-label="Facebook" href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-              <a aria-label="LinkedIn" href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-              <a aria-label="Instagram" href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              <a aria-label="Twitter" href="#"><i class="bi bi-twitter mx-1"></i></a>
+              <a aria-label="Facebook" href="#"><i class="bi bi-facebook mx-1"></i></a>
+              <a aria-label="LinkedIn" href="#"><i class="bi bi-linkedin mx-1"></i></a>
+              <a aria-label="Instagram" href="#"><i class="bi bi-instagram mx-1"></i></a>
             </div>
           </div>
         </div>
@@ -267,10 +263,10 @@
               <p class="card-text">
                 Is able to effectively communicate and clearly convey information to the group.
               </p>
-              <a aria-label="Twitter" href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-              <a aria-label="Facebook" href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-              <a aria-label="LinkedIn" href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-              <a aria-label="Instagram" href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              <a aria-label="Twitter" href="#"><i class="bi bi-twitter mx-1"></i></a>
+              <a aria-label="Facebook" href="#"><i class="bi bi-facebook mx-1"></i></a>
+              <a aria-label="LinkedIn" href="#"><i class="bi bi-linkedin mx-1"></i></a>
+              <a aria-label="Instagram" href="#"><i class="bi bi-instagram mx-1"></i></a>
             </div>
           </div>
         </div>
@@ -285,10 +281,10 @@
                 Is able to anticipate and handle any issues that may arise during the trip and is able to think on their
                 feet and problem-solve.
               </p>
-              <a aria-label="Twitter" href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-              <a aria-label="Facebook" href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-              <a aria-label="LinkedIn" href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-              <a aria-label="Instagram" href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              <a aria-label="Twitter" href="#"><i class="bi bi-twitter mx-1"></i></a>
+              <a aria-label="Facebook" href="#"><i class="bi bi-facebook mx-1"></i></a>
+              <a aria-label="LinkedIn" href="#"><i class="bi bi-linkedin mx-1"></i></a>
+              <a aria-label="Instagram" href="#"><i class="bi bi-instagram mx-1"></i></a>
             </div>
           </div>
         </div>
@@ -303,10 +299,10 @@
                 Is organized and punctual, able to keep the group on schedule while also being flexible to accommodate
                 any changes or requests from the travelers.
               </p>
-              <a aria-label="Twitter" href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-              <a aria-label="Facebook" href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-              <a aria-label="LinkedIn" href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-              <a aria-label="Instagram" href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              <a aria-label="Twitter" href="#"><i class="bi bi-twitter mx-1"></i></a>
+              <a aria-label="Facebook" href="#"><i class="bi bi-facebook mx-1"></i></a>
+              <a aria-label="LinkedIn" href="#"><i class="bi bi-linkedin mx-1"></i></a>
+              <a aria-label="Instagram" href="#"><i class="bi bi-instagram mx-1"></i></a>
             </div>
           </div>
         </div>
@@ -318,7 +314,7 @@
   <section class="p-5">
     <div class="container">
       <div class="row g-4">
-        <div class="col-md">
+        <div class="col-md overflow-auto">
           <h2 class="text-center mb-4">Contact Info</h2>
           <ul class="list-group list-group-flush lead">
             <li class="list-group-item" aria-label="Location">
@@ -335,7 +331,7 @@
           </ul>
         </div>
         <div class="col-md">
-          <div id="map" class="w-100 h-100 rounded" aria-label="Map"></div>
+          <div id="map" class="md-w-100 md-h-100 rounded" aria-label="Map"></div>
         </div>
       </div>
     </div>
@@ -430,10 +426,6 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
 }
 
 footer ul li a {
-  color: white;
+  color: var(--bs-white);
   text-decoration: none;
 }
 
@@ -63,14 +63,26 @@ footer ul li a {
   background-size: cover;
 }
 
+#map {
+  height: 300px;
+}
+
 /* Bootstrap */
 
-nav {
+.bi {
+  color: var(--bs-dark);
+}
+
+.bi:hover {
+  color: var(--bs-link-color);
+}
+
+.navbar {
   backdrop-filter: blur(8px);
 }
 
-.navbar-nav .nav-item .nav-link {
-  color: white;
+.nav-link {
+  color: var(--bs-white);
 }
 
 .modal-content {
@@ -79,6 +91,7 @@ nav {
 
 .card {
   backdrop-filter: blur(32px);
+  overflow: auto;
 }
 
 .card:hover {
@@ -87,11 +100,11 @@ nav {
 
 /* Chrome */
 ::-webkit-scrollbar-thumb {
-  background-color: black;
+  background-color: var(--bs-dark);
 }
 
 ::-webkit-scrollbar {
-  background-color: lightgray;
+  background-color: var(--bs-gray-300);
   width: 8px;
 }
 

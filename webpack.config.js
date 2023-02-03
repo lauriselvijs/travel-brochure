@@ -9,9 +9,7 @@ const isProduction = process.env.NODE_ENV === "production";
 
 module.exports = {
   mode: isProduction ? "production" : "development",
-  entry: {
-    theme: path.resolve(__dirname, "/assets/js/main.js"),
-  },
+  entry: path.resolve(__dirname, "/assets/js/main.js"),
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "assets/js/[name].[contenthash].js",
@@ -36,7 +34,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(s(a|c)ss)$/,
+        test: /\.(sc|sa|c)ss$/,
         use: [
           {
             loader: "style-loader",
@@ -92,6 +90,10 @@ module.exports = {
             maxSize: 10 * 1024,
           },
         },
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/inline",
       },
     ],
   },
