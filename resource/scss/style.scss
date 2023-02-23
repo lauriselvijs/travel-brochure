@@ -2,65 +2,75 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar-thumb {
+  background-color: var(--bs-dark);
+}
+
+::-webkit-scrollbar {
+  background-color: var(--bs-gray-300);
+  width: 8px;
+}
+
 footer ul li a {
   color: var(--bs-white);
   text-decoration: none;
 }
 
-.card-text {
-  font-size: 1.375rem;
+@mixin background {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #showcase {
+  @include background;
+
   background-image: url("../../assets/images/travel-showcase.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #message {
+  @include background;
+
   background-image: url("../../assets/images/map.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 40vh;
 }
 
 #rome {
+  @include background;
+
   background-image: url("../../assets/images/rome.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   max-height: 341px;
 }
 
 #paris {
+  @include background;
+
   background-image: url("../../assets/images/paris.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   max-height: 341px;
 }
 
 #venice {
+  @include background;
+
   background-image: url("../../assets/images/venice.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   max-height: 341px;
 }
 
 #mountains {
+  @include background;
+
   background-image: url("../../assets/images/mountains.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #snow-resort {
+  @include background;
+
   background-image: url("../../assets/images/snow-resort.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #travel-guides {
+  @include background;
+
   background-image: url("../../assets/images/map.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #map {
@@ -68,13 +78,12 @@ footer ul li a {
 }
 
 /* Bootstrap */
-
 .bi {
   color: var(--bs-dark);
-}
 
-.bi:hover {
-  color: var(--bs-link-color);
+  &:hover {
+    color: var(--bs-link-color);
+  }
 }
 
 .navbar {
@@ -91,23 +100,20 @@ footer ul li a {
 
 .card {
   backdrop-filter: blur(32px);
+  border: none;
   overflow: auto;
+  transition: transform linear 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
-.card:hover {
-  transform: scale(1.1);
+.card-text {
+  font-size: 1.375rem;
 }
 
-/* Chrome */
-::-webkit-scrollbar-thumb {
-  background-color: var(--bs-dark);
-}
-
-::-webkit-scrollbar {
-  background-color: var(--bs-gray-300);
-  width: 8px;
-}
-
+/*Media */
 @media (min-width: 768px) {
   .news-input {
     width: 50%;
