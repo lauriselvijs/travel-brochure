@@ -14,326 +14,331 @@
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-dark bg-opacity-50 navbar-dark py-3 fixed-top overflow-auto">
-    <div class="container">
-      <a href="#" class="navbar-brand  w-50 text-wrap">Roaming Adventures</a>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark bg-opacity-50 navbar-dark py-3 fixed-top overflow-auto">
+      <div class="container">
+        <a href="#" class="navbar-brand  w-50 text-wrap">Roaming Adventures</a>
 
-      <button aria-label="Toggle hamburger menu" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navmenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button aria-label="Toggle hamburger menu" class="navbar-toggler border-0" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse pt-lg-0 pt-4" id="navmenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a href="#pricing" class="nav-link">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a href="#questions" class="nav-link">Questions</a>
-          </li>
-          <li class="nav-item">
-            <a href="#travel-guides" class="nav-link">Travel Guides</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Showcase -->
-  <section id="showcase" class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start min-vh-100">
-    <div class="container h-100">
-      <div class="d-sm-flex align-items-center justify-content-between pb-4 pt-5">
-        <div class="pt-5">
-          <h1>
-            Travel to a<span class="text-warning"> New Locations </span>
-          </h1>
-          <p class="lead my-4">
-            "Journey to the World's Most Exotic Destinations"
-          </p>
-          <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
-            Find Your Pefect Location
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Newsletter -->
-  <section id="message" class="bg-dark text-light p-5">
-    <div class="d-md-flex justify-content-between align-items-center">
-      <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
-
-      <div class="input-group news-input">
-        <input type="text" class="form-control" placeholder="Enter Email" />
-        <button class="btn btn-dark btn-lg" type="button">Submit</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Boxes -->
-  <section class="p-5 mb-4">
-    <div class="container">
-      <div class="row text-center g-4">
-        <div class="col-md">
-          <div class="card bg-dark text-light overflow-auto h-100">
-            <div id="rome" class="card-body text-center">
-              <h3 class="card-title mb-3">Rome</h3>
-              <p class="card-text">
-                Ancient city, center of Roman Empire, rich history, landmarks, ruins.
-              </p>
-              <a href="#" class="btn btn-dark">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="card bg-secondary text-light overflow-auto h-100">
-            <div id="paris" class="card-body text-center">
-              <h3 class="card-title mb-3">Paris</h3>
-              <p class="card-text">
-                City of lights, romantic, Eiffel Tower, museums, fashion, culture.
-              </p>
-              <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="card bg-dark text-light overflow-auto h-100">
-            <div id="venice" class="card-body text-center">
-              <h3 class="card-title mb-3">Venice</h3>
-              <p class="card-text">
-                Water-based city, canals, gondolas, art, architecture, romantic, unique.
-              </p>
-              <a href="#" class="btn btn-dark">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Learn Sections -->
-  <section id="mountains" class="p-5 text-light ">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md"></div>
-        <div class="col-md p-5">
-          <h2>Travel...</h2>
-          <p class="lead">
-            and discover new places, cultures, experiences, memories.
-          </p>
-          <a href="#" class="btn btn-light mt-3">
-            <i class="bi bi-chevron-right" aria-hidden="true"></i> Read More
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="snow-resort" class="p-5 text-dark">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md p-5">
-          <h2>to new locations</h2>
-          <p class="lead">
-            Snowy mountains rugged peaks covered in a blanket of snow, with icy glaciers, snow-capped summits, and
-            frozen lakes.
-          </p>
-          <a href="#" class="btn btn-light mt-3">
-            <i class="bi bi-chevron-right" aria-hidden="true"></i> Read More
-          </a>
-        </div>
-        <div class="col-md">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Question Accordion -->
-  <section id="questions" class="p-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
-      <div class="accordion accordion-flush" id="questions">
-        <!-- Item 1 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#question-one">
-              Where exactly are you located?
-            </button>
-          </h2>
-          <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
-            <div class="accordion-body">
-              123 Main Street, Anytown, USA 12345
-            </div>
-          </div>
-        </div>
-        <!-- Item 2 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#question-two">
-              How many locations available?
-            </button>
-          </h2>
-          <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
-            <div class="accordion-body">
-              For now only one.
-            </div>
-          </div>
-        </div>
-        <!-- Item 3 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#question-three">
-              What do I need to know befor traveling?
-            </button>
-          </h2>
-          <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
-            <div class="accordion-body">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Make sure your <strong>passport</strong> is valid and check if you need a
-                  <strong>visa</strong> for the country you are visiting.
-                </li>
-                <li class="list-group-item">Check if any <strong>vaccinations</strong> are required or recommended for
-                  the
-                  country you are visiting.</li>
-                <li class="list-group-item">Consider getting <strong>travel insurance</strong> to protect against
-                  unexpected events such as trip cancellation, medical emergencies, and lost luggage.</li>
-                <li class="list-group-item">Make sure you have enough <strong>local currency</strong> for your trip and
-                  consider the availability of ATMs and credit card acceptance at your destination.</li>
-                <li class="list-group-item">Research and book your <strong>accommodations</strong> and
-                  <strong>transportation</strong> in advance.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- Item 4 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#question-four">
-              How do I sign up?
-            </button>
-          </h2>
-          <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
-            <div class="accordion-body">
-              Click on <strong>Find Your Perfect Location</strong> button located top of the page. </div>
-          </div>
-        </div>
-
-  </section>
-
-  <section id="travel-guides" class="p-5 bg-dark">
-    <div class="container">
-      <h2 class="text-center text-white">Our Travel Guides</h2>
-      <p class="fw-bold lead text-center text-white mb-5">
-        Our guides all have 3+ years experience as travel guides
-      </p>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-3">
-          <div class="card bg-light bg-opacity-50 h-100">
-            <div class="card-body text-center">
-              <img src="https://randomuser.me/api/portraits/men/11.jpg" loading="lazy" width="128" height="128"
-                class="rounded-circle mb-3" alt="Guide" />
-              <h3 class="card-title mb-3">John Doe</h3>
-              <p class="card-text">
-                Has a deep understanding and knowledge of the destinations they are guiding and can provide insightful
-                information and context to travelers. </p>
-              <a aria-label="Twitter" href="#"><i aria-hidden="true" class="bi bi-twitter mx-1"></i></a>
-              <a aria-label="Facebook" href="#"><i aria-hidden="true" class="bi bi-facebook mx-1"></i></a>
-              <a aria-label="LinkedIn" href="#"><i aria-hidden="true" class="bi bi-linkedin mx-1"></i></a>
-              <a aria-label="Instagram" href="#"><i aria-hidden="true" class="bi bi-instagram mx-1"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="card bg-light bg-opacity-50 h-100">
-            <div class="card-body text-center">
-              <img src="https://randomuser.me/api/portraits/women/11.jpg" loading="lazy" width="128" height="128"
-                class="rounded-circle mb-3" alt="Guide" />
-              <h3 class="card-title mb-3">Jane Doe</h3>
-              <p class="card-text">
-                Is able to effectively communicate and clearly convey information to the group.
-              </p>
-              <a aria-label="Twitter" href="#"><i aria-hidden="true" class="bi bi-twitter mx-1"></i></a>
-              <a aria-label="Facebook" href="#"><i aria-hidden="true" class="bi bi-facebook mx-1"></i></a>
-              <a aria-label="LinkedIn" href="#"><i aria-hidden="true" class="bi bi-linkedin mx-1"></i></a>
-              <a aria-label="Instagram" href="#"><i aria-hidden="true" class="bi bi-instagram mx-1"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="card bg-light bg-opacity-50 h-100">
-            <div class="card-body text-center">
-              <img src="https://randomuser.me/api/portraits/men/12.jpg" loading="lazy" width="128" height="128"
-                class="rounded-circle mb-3" alt="Guide" />
-              <h3 class="card-title mb-3">Steve Smith</h3>
-              <p class="card-text">
-                Is able to anticipate and handle any issues that may arise during the trip and is able to think on their
-                feet and problem-solve.
-              </p>
-              <a aria-label="Twitter" href="#"><i aria-hidden="true" class="bi bi-twitter mx-1"></i></a>
-              <a aria-label="Facebook" href="#"><i aria-hidden="true" class="bi bi-facebook mx-1"></i></a>
-              <a aria-label="LinkedIn" href="#"><i aria-hidden="true" class="bi bi-linkedin mx-1"></i></a>
-              <a aria-label="Instagram" href="#"><i aria-hidden="true" class="bi bi-instagram mx-1"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="card bg-light bg-opacity-50 h-100">
-            <div class="card-body text-center">
-              <img src="https://randomuser.me/api/portraits/women/12.jpg" loading="lazy" width="128" height="128"
-                class="rounded-circle mb-3" alt="Guide" />
-              <h3 class="card-title mb-3">Sara Smith</h3>
-              <p class="card-text">
-                Is organized and punctual, able to keep the group on schedule while also being flexible to accommodate
-                any changes or requests from the travelers.
-              </p>
-              <a aria-label="Twitter" href="#"><i aria-hidden="true" class="bi bi-twitter mx-1"></i></a>
-              <a aria-label="Facebook" href="#"><i aria-hidden="true" class="bi bi-facebook mx-1"></i></a>
-              <a aria-label="LinkedIn" href="#"><i aria-hidden="true" class="bi bi-linkedin mx-1"></i></a>
-              <a aria-label="Instagram" href="#"><i aria-hidden="true" class="bi bi-instagram mx-1"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact & Map -->
-  <section class="p-5">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-md overflow-auto">
-          <h2 class="text-center mb-4">Contact Info</h2>
-          <ul class="list-group list-group-flush lead">
-            <li class="list-group-item" aria-label="Location">
-              <span class="fw-bold">Main Location:</span>
-              123 Main Street, Anytown, USA 12345
+        <div class="collapse navbar-collapse pt-lg-0 pt-4" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#pricing" class="nav-link">Pricing</a>
             </li>
-            <li class="list-group-item" aria-label="Phone">
-              <span class="fw-bold">Phone:</span> (555) 555-5555
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">Questions</a>
             </li>
-            <li class="list-group-item" aria-label="Email">
-              <span class="fw-bold">Enrollment Email:</span>
-              traveleuropa@traveleuropa.test
+            <li class="nav-item">
+              <a href="#travel-guides" class="nav-link">Travel Guides</a>
             </li>
           </ul>
         </div>
-        <div class="col-md">
-          <div id="map" class="md-w-100 md-h-100 rounded" aria-label="Map"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Showcase -->
+    <section id="showcase" class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start min-vh-100">
+      <div class="container h-100">
+        <div class="d-sm-flex align-items-center justify-content-between pb-4 pt-5">
+          <div class="pt-5">
+            <h1>
+              Travel to a<span class="text-warning"> New Locations </span>
+            </h1>
+            <p class="lead my-4">
+              "Journey to the World's Most Exotic Destinations"
+            </p>
+            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+              Find Your Pefect Location
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+
+    <!-- Newsletter -->
+    <section id="message" class="bg-dark text-light p-5">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+
+        <div class="input-group news-input">
+          <input type="text" class="form-control" placeholder="Enter Email" />
+          <button class="btn btn-dark btn-lg" type="button">Submit</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Boxes -->
+    <section class="p-5 mb-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light h-100">
+              <div id="rome" class="card-body text-center">
+                <h3 class="card-title mb-3">Rome</h3>
+                <p class="card-text">
+                  Ancient city, center of Roman Empire, rich history, landmarks, ruins.
+                </p>
+                <a href="#" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light h-100">
+              <div id="paris" class="card-body text-center">
+                <h3 class="card-title mb-3">Paris</h3>
+                <p class="card-text">
+                  City of lights, romantic, Eiffel Tower, museums, fashion, culture.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light h-100">
+              <div id="venice" class="card-body text-center">
+                <h3 class="card-title mb-3">Venice</h3>
+                <p class="card-text">
+                  Water-based city, canals, gondolas, art, architecture, romantic, unique.
+                </p>
+                <a href="#" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn Sections -->
+    <section id="mountains" class="p-5 text-light ">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md"></div>
+          <div class="col-md p-5">
+            <h2>Travel...</h2>
+            <p class="lead">
+              and discover new places, cultures, experiences, memories.
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right" aria-hidden="true"></i> Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="snow-resort" class="p-5 text-dark">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>to new locations</h2>
+            <p class="lead">
+              Snowy mountains rugged peaks covered in a blanket of snow, with icy glaciers, snow-capped summits, and
+              frozen lakes.
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right" aria-hidden="true"></i> Read More
+            </a>
+          </div>
+          <div class="col-md">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question Accordion -->
+    <section id="questions" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="questions">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#question-one">
+                Where exactly are you located?
+              </button>
+            </h3>
+            <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+              <div class="accordion-body">
+                123 Main Street, Anytown, USA 12345
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#question-two">
+                How many locations available?
+              </button>
+            </h3>
+            <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+              <div class="accordion-body">
+                For now only one.
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#question-three">
+                What do I need to know befor traveling?
+              </button>
+            </h3>
+            <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+              <div class="accordion-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Make sure your <strong>passport</strong> is valid and check if you need a
+                    <strong>visa</strong> for the country you are visiting.
+                  </li>
+                  <li class="list-group-item">Check if any <strong>vaccinations</strong> are required or recommended for
+                    the
+                    country you are visiting.</li>
+                  <li class="list-group-item">Consider getting <strong>travel insurance</strong> to protect against
+                    unexpected events such as trip cancellation, medical emergencies, and lost luggage.</li>
+                  <li class="list-group-item">Make sure you have enough <strong>local currency</strong> for your trip
+                    and
+                    consider the availability of ATMs and credit card acceptance at your destination.</li>
+                  <li class="list-group-item">Research and book your <strong>accommodations</strong> and
+                    <strong>transportation</strong> in advance.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#question-four">
+                How do I sign up?
+              </button>
+            </h3>
+            <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+              <div class="accordion-body">
+                Click on <strong>Find Your Perfect Location</strong> button located top of the page. </div>
+            </div>
+          </div>
+
+    </section>
+
+    <section id="travel-guides" class="p-5 bg-dark">
+      <div class="container">
+        <h2 class="text-center text-white">Our Travel Guides</h2>
+        <p class="fw-bold lead text-center text-white mb-5">
+          Our guides all have 3+ years experience as travel guides
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light bg-opacity-50 h-100">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/men/11.jpg" loading="lazy" width="128" height="128"
+                  class="rounded-circle mb-3" alt="Guide" />
+                <h3 class="card-title mb-3">John Doe</h3>
+                <p class="card-text">
+                  Has a deep understanding and knowledge of the destinations they are guiding and can provide insightful
+                  information and context to travelers. </p>
+                <a aria-label="Twitter" href="#"><i aria-hidden="true" class="bi bi-twitter mx-1"></i></a>
+                <a aria-label="Facebook" href="#"><i aria-hidden="true" class="bi bi-facebook mx-1"></i></a>
+                <a aria-label="LinkedIn" href="#"><i aria-hidden="true" class="bi bi-linkedin mx-1"></i></a>
+                <a aria-label="Instagram" href="#"><i aria-hidden="true" class="bi bi-instagram mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light bg-opacity-50 h-100">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/women/11.jpg" loading="lazy" width="128" height="128"
+                  class="rounded-circle mb-3" alt="Guide" />
+                <h3 class="card-title mb-3">Jane Doe</h3>
+                <p class="card-text">
+                  Is able to effectively communicate and clearly convey information to the group.
+                </p>
+                <a aria-label="Twitter" href="#"><i aria-hidden="true" class="bi bi-twitter mx-1"></i></a>
+                <a aria-label="Facebook" href="#"><i aria-hidden="true" class="bi bi-facebook mx-1"></i></a>
+                <a aria-label="LinkedIn" href="#"><i aria-hidden="true" class="bi bi-linkedin mx-1"></i></a>
+                <a aria-label="Instagram" href="#"><i aria-hidden="true" class="bi bi-instagram mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light bg-opacity-50 h-100">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/men/12.jpg" loading="lazy" width="128" height="128"
+                  class="rounded-circle mb-3" alt="Guide" />
+                <h3 class="card-title mb-3">Steve Smith</h3>
+                <p class="card-text">
+                  Is able to anticipate and handle any issues that may arise during the trip and is able to think on
+                  their
+                  feet and problem-solve.
+                </p>
+                <a aria-label="Twitter" href="#"><i aria-hidden="true" class="bi bi-twitter mx-1"></i></a>
+                <a aria-label="Facebook" href="#"><i aria-hidden="true" class="bi bi-facebook mx-1"></i></a>
+                <a aria-label="LinkedIn" href="#"><i aria-hidden="true" class="bi bi-linkedin mx-1"></i></a>
+                <a aria-label="Instagram" href="#"><i aria-hidden="true" class="bi bi-instagram mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light bg-opacity-50 h-100">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/women/12.jpg" loading="lazy" width="128" height="128"
+                  class="rounded-circle mb-3" alt="Guide" />
+                <h3 class="card-title mb-3">Sara Smith</h3>
+                <p class="card-text">
+                  Is organized and punctual, able to keep the group on schedule while also being flexible to accommodate
+                  any changes or requests from the travelers.
+                </p>
+                <a aria-label="Twitter" href="#"><i aria-hidden="true" class="bi bi-twitter mx-1"></i></a>
+                <a aria-label="Facebook" href="#"><i aria-hidden="true" class="bi bi-facebook mx-1"></i></a>
+                <a aria-label="LinkedIn" href="#"><i aria-hidden="true" class="bi bi-linkedin mx-1"></i></a>
+                <a aria-label="Instagram" href="#"><i aria-hidden="true" class="bi bi-instagram mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md overflow-auto">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item" aria-label="Location">
+                <span class="fw-bold">Main Location:</span>
+                123 Main Street, Anytown, USA 12345
+              </li>
+              <li class="list-group-item" aria-label="Phone">
+                <span class="fw-bold">Phone:</span> (555) 555-5555
+              </li>
+              <li class="list-group-item" aria-label="Email">
+                <span class="fw-bold">Enrollment Email:</span>
+                traveleuropa@traveleuropa.test
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <div id="map" class="md-w-100 md-h-100 rounded" aria-label="Map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="bg-black text-white p-5">
     <div class="container">

@@ -34,29 +34,38 @@ footer ul li a {
   height: 40vh;
 }
 
+@mixin travel-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 341px;
+}
+
 #rome {
   @include background;
+  @include travel-card;
 
   background-image: url("../../assets/images/rome.jpg");
-  max-height: 341px;
 }
 
 #paris {
   @include background;
+  @include travel-card;
 
   background-image: url("../../assets/images/paris.jpg");
-  max-height: 341px;
 }
 
 #venice {
   @include background;
+  @include travel-card;
 
   background-image: url("../../assets/images/venice.jpg");
-  max-height: 341px;
 }
 
 #mountains {
   @include background;
+  @include travel-card;
 
   background-image: url("../../assets/images/mountains.jpg");
 }
