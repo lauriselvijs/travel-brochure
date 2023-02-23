@@ -2,8 +2,8 @@
   "name": "travel-brochure",
   "version": "2.0.0",
   "engines": {
-    "npm": "8",
-    "node": "18"
+    "npm": "9",
+    "node": "19"
   },
   "scripts": {
     "docker:dev-up": "docker-compose -f *.dev.yml up",
