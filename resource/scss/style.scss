@@ -1,5 +1,7 @@
 :root {
   scroll-behavior: smooth;
+  scrollbar-color: var(--bs-dark) var(--bs-gray-300);
+  scrollbar-width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -11,14 +13,22 @@
   width: 8px;
 }
 
-footer ul li a {
-  color: var(--bs-white);
-  text-decoration: none;
-}
-
 @mixin background {
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@mixin travel-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 341px;
+}
+
+footer ul li a {
+  color: var(--bs-white);
+  text-decoration: none;
 }
 
 #showcase {
@@ -32,14 +42,6 @@ footer ul li a {
 
   background-image: url("../../assets/images/map.jpg");
   height: 40vh;
-}
-
-@mixin travel-card {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  min-height: 341px;
 }
 
 #rome {
