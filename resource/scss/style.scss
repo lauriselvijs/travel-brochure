@@ -69,14 +69,14 @@ footer ul li a {
   @include background;
 
   background-image: url("../../assets/images/mountains.jpg");
-  width: 100vh;
+  height: 100vh;
 }
 
 #snow-resort {
   @include background;
 
   background-image: url("../../assets/images/snow-resort.jpg");
-  width: 100vh;
+  height: 100vh;
 }
 
 #travel-guides {
