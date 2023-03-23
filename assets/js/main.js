@@ -33,6 +33,7 @@ new mapboxgl.Marker({
 // Scroll anchor
 const HIDE_TO_THE_TOP_ANCHOR_TIMEOUT = 500;
 const toTheTopAnchor = document.getElementById("to-the-top-anchor");
+
 let timer = null;
 let mouseOverToTheTopAnchor = false;
 

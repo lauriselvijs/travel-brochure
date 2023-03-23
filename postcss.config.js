@@ -3,9 +3,11 @@ const purgecss = require("@fullhuman/postcss-purgecss");
 module.exports = {
   plugins: [
     require("postcss-preset-env"),
-    purgecss({
-      whitelistPatterns: [/mgl-map-wrapper.*/, /mapboxgl.*/],
-      content: ["*.html"]
-    }),
+    // BUG: removes mapbox classes
+    // purgecss({
+    //   whitelistPatterns: [/mapbox*/],
+    //   whitelistPatternsChildren: [/mapbox*/],
+    //   content: ["*.html"],
+    // }),
   ],
 };
