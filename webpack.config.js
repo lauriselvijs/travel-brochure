@@ -4,6 +4,7 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const isProduction = process.env.NODE_ENV === "production";
 
@@ -37,7 +38,7 @@ module.exports = {
         test: /\.(sc|sa|c)ss$/,
         use: [
           {
-            loader: "style-loader",
+            loader: isProduction ? MiniCssExtractPlugin.loader : "style-loader",
           },
           {
             loader: "css-loader",
@@ -97,6 +98,9 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    extensions: [".js"],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
@@ -107,6 +111,9 @@ module.exports = {
     }),
     ...(isProduction
       ? [
+          new MiniCssExtractPlugin({
+            filename: "assets/css/style.[contenthash].css",
+          }),
           new ImageMinimizerPlugin({
             minimizer: {
               implementation: ImageMinimizerPlugin.imageminMinify,
