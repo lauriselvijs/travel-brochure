@@ -37,18 +37,10 @@ module.exports = {
       {
         test: /\.(sc|sa|c)ss$/,
         use: [
-          {
-            loader: isProduction ? MiniCssExtractPlugin.loader : "style-loader",
-          },
-          {
-            loader: "css-loader",
-          },
-          {
-            loader: "postcss-loader",
-          },
-          {
-            loader: "resolve-url-loader",
-          },
+          isProduction ? MiniCssExtractPlugin.loader : "style-loader",
+          "css-loader",
+          "postcss-loader",
+          "resolve-url-loader",
           {
             loader: "sass-loader",
             options: {
@@ -60,9 +52,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-        },
+        use: "babel-loader",
       },
       {
         test: /\.html$/i,
@@ -126,9 +116,7 @@ module.exports = {
             },
           }),
           new CompressionPlugin({
-            algorithm: "brotliCompress",
-            // algorithm: "gzip",
-            // deleteOriginalAssets: true,
+            algorithm: "gzip",
             threshold: 1 * 1024,
           }),
         ]
