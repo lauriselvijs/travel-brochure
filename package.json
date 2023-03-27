@@ -12,6 +12,8 @@
     "docker:client-build": "docker-compose -f *.dev.yml exec client npm run build",
     "docker:client-remove-build": "docker-compose -f *.dev.yml exec client rm -r build",
     "docker:dev-client-shell": "docker-compose -f *.dev.yml exec client sh",
+    "sass:watch": "sass resource/scss/style.scss assets/css/style.css --watch",
+    "sass:compile": "sass resource/scss/style.scss assets/css/style.css --style compressed",
     "start": "NODE_ENV=development webpack serve",
     "build": "NODE_ENV=production webpack"
   },
