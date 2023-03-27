@@ -13,6 +13,25 @@
   width: 8px;
 }
 
+img {
+  height: auto;
+}
+
+/* tablets and up */
+@mixin mobile {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
 @mixin background {
   background-repeat: no-repeat;
   background-size: cover;
@@ -116,7 +135,7 @@ footer ul li a {
   overflow: auto;
   transition: transform linear 0.2s;
 
-  &:hover {
+  @include hover {
     transform: scale(1.1);
   }
 }
@@ -126,7 +145,7 @@ footer ul li a {
 }
 
 /*Media */
-@media (min-width: 768px) {
+@include mobile {
   .news-input {
     width: 50%;
   }
