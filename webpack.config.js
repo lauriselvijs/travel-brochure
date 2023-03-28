@@ -24,10 +24,7 @@ module.exports = {
   devServer: {
     port: 3000,
     open: true,
-    hot: true,
     watchFiles: ["index.html"],
-    compress: true,
-    historyApiFallback: true,
   },
   module: {
     rules: [
