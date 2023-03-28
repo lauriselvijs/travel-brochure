@@ -22,9 +22,6 @@ module.exports = {
   },
   devtool: "source-map",
   devServer: {
-    static: {
-      directory: path.resolve(__dirname, "dist"),
-    },
     port: 3000,
     open: true,
     hot: true,
@@ -35,7 +32,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(sc|sa|c)ss$/,
+        test: /\.(sc|sa|c)ss$/i,
         use: [
           isProduction ? MiniCssExtractPlugin.loader : "style-loader",
           "css-loader",
@@ -50,7 +47,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.js$/,
+        test: /\.js$/i,
         exclude: /node_modules/,
         use: "babel-loader",
       },
